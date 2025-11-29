@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Новогодний кроссворд</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e6f7ff;
+            text-align: center;
+            padding: 20px;
+            color: #2c3e50;
+        }
+        h1 {
+            color: #c0392b;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        td {
+            width: 36px;
+            height: 36px;
+            border: 2px solid #34495e;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: #ecf0f1;
+            position: relative;
+        }
+        td.black {
+            background-color: #2c3e50;
+        }
+        td input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0;
+            outline: none;
+        }
+        td input:focus {
+            background-color: #fff9c4;
+        }
+        .number {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            font-size: 10px;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .clues {
+            margin: 20px auto;
+            text-align: left;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .clues h2 {
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+        .clue {
+            margin: 5px 0;
+        }
+        .instructions {
+            margin-top: 20px;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Новогодний кроссворд ✨</h1>
+        <p>Разгадайте 10 слов, связанных с русским Новым Годом!</p>
+
+        <!-- Кроссворд: 13×13 -->
+        <table>
+            <tr>
+                <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td><span class="number">1</span><input type="text" maxlength="1" tabindex="1"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+            </tr>
+            <tr>
+                <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td><input type="text" maxlength="1" tabindex="2"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+            </tr>
+            <tr>
+                <td><span class="number">2</span><input type="text" maxlength="1" tabindex="12"></td><td><input type="text" maxlength="1" tabindex="13"></td><td><input type="text" maxlength="1" tabindex="14"></td><td><input type="text" maxlength="1" tabindex="15"></td><td><input type="text" maxlength="1" tabindex="3"></td><td><span class="number">3</span><input type="text" maxlength="1" tabindex="22"></td><td><input type="text" maxlength="1" tabindex="23"></td><td><input type="text" maxlength="1" tabindex="24"></td><td><input type="text" maxlength="1" tabindex="25"></td><td><input type="text" maxlength="1" tabindex="26"></td><td><input type="text" maxlength="1" tabindex="27"></td><td><input type="text" maxlength="1" tabindex="28"></td><td><input type="text" maxlength="1" tabindex="29"></td>
+            </tr>
+            <tr>
+                <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td><input type="text" maxlength="1" tabindex="4"></td><td class="black"></td><td><span class="number">4</span><input type="text" maxlength="1" tabindex="30"></td><td><input type="text" maxlength="1" tabindex="31"></td><td><input type="text" maxlength="1" tabindex="32"></td><td><input type="text" maxlength="1" tabindex="33"></td><td><input type="text" maxlength="1" tabindex="34"></td><td><input type="text" maxlength="1" tabindex="35"></td><td><input type="text" maxlength="1" tabindex="36"></td>
+            </tr>
+            <tr>
+                <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td><input type="text" maxlength="1" tabindex="5"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+            </tr>
+            <tr>
+                <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td><input type="text" maxlength="1" tabindex="6"></td><td class="black"></td><td><span class="number">5</span><input type="text" maxlength="1" tabindex="37"></td><td><input type="text" maxlength="1" tabindex="38"></td><td><input type="text" maxlength="1" tabindex="39"></td><td><input type="text" maxlength="1" tabindex="40"></td><td><input type="text" maxlength="1" tabindex="41"></td><td><input type="text" maxlength="1" tabindex="42"></td><td class="black"></td>
+            </tr>
+            <tr>
+                <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td><input type="text" maxlength="1" tabindex="7"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+            </tr>
+            <tr>
+                <td class="black"></td><td><span class="number">6</span><input type="text" maxlength="1" tabindex="8"></td><td><input type="text" maxlength="1" tabindex="9"></td><td><input type="text" maxlength="1" tabindex="10"></td><td><input type="text" maxlength="1" tabindex="8"></td><td><input type="text" maxlength="1" tabindex="11"></td><td><input type="text" maxlength="1" tabindex="12"></td><td><input type="text" maxlength="1" tabindex="13"></td><td><input type="text" maxlength="1" tabindex="14"></td><td class="black"></td><td><span class="number">7</span><input type="text" maxlength="1" tabindex="43"></td><td><input type="text" maxlength="1" tabindex="44"></td><td><input type="text" maxlength="1" tabindex="45"></td>
+            </tr>
+            <tr>
+                <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td><input type="text" maxlength="1" tabindex="15"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+            </tr>
+            <tr>
+                <td><span class="number">8</span><input type="text" maxlength="1" tabindex="46"></td><td><input type="text" maxlength="1" tabindex="47"></td><td><input type="text" maxlength="1" tabindex="48"></td><td><input type="text" maxlength="1" tabindex="49"></td><td><input type="text" maxlength="1" tabindex="16"></td><td><span class="number">9</span><input type="text" maxlength="1" tabindex="50"></td><td><input type="text" maxlength="1" tabindex="51"></td><td><input type="text" maxlength="1" tabindex="52"></td><td><input type="text" maxlength="1" tabindex="53"></td><td><input type="text" maxlength="1" tabindex="54"></td><td><input type="text" maxlength="1" tabindex="55"></td><td><input type="text" maxlength="1" tabindex="56"></td><td><input type="text" maxlength="1" tabindex="57"></td>
+            </tr>
+            <tr>
+                <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td><input type="text" maxlength="1" tabindex="17"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+            </tr>
+            <tr>
+                <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td><input type="text" maxlength="1" tabindex="18"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+            </tr>
+            <tr>
+                <td><span class="number">10</span><input type="text" maxlength="1" tabindex="19"></td><td><input type="text" maxlength="1" tabindex="20"></td><td><input type="text" maxlength="1" tabindex="21"></td><td><input type="text" maxlength="1" tabindex="22"></td><td><input type="text" maxlength="1" tabindex="19"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+            </tr>
+        </table>
+
+        <div class="clues">
+            <h2>По горизонтали:</h2>
+            <div class="clue">2. Главный зимний волшебник, приносящий подарки</div>
+            <div class="clue">6. Праздничный овощной салат с колбасой и майонезом</div>
+            <div class="clue">8. Традиционное новогоднее блюдо — салат из варёных овощей и мяса</div>
+            <div class="clue">10. Праздничный отдых после окончания учёбы</div>
+
+            <h2>По вертикали:</h2>
+            <div class="clue">1. Украшенное дерево — символ Нового Года</div>
+            <div class="clue">3. Внучка Деда Мороза</div>
+            <div class="clue">4. Яркий цитрусовый фрукт в новогоднем подарке</div>
+            <div class="clue">5. То, что лежит под ёлкой в красивой обёртке</div>
+            <div class="clue">7. Фейерверк-шумелка в виде палочки</div>
+            <div class="clue">9. Праздничная палочка с искрами, не взрывается</div>
+        </div>
+
+        <p class="instructions">
+            🔤 Вводите по одной букве в клетку. Нажимайте Tab для перехода к следующей.<br>
+            💡 Ответы: 1. ЁЛКА, 2. ДЕДМОРОЗ, 3. СНЕГУРОЧКА, 4. МАНДАРИН, 5. ПОДАРОК,<br>
+            &emsp;&emsp;&emsp;&emsp;&thinsp;6. ХЛОПУШКА, 7. САЛАТ, 8. ОЛИВЬЕ, 9. БЕНГАЛКА, 10. КАНИКУЛЫ
+        </p>
+    </div>
+</body>
+</html>
