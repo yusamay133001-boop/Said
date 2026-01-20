@@ -97,19 +97,19 @@
   </main>
 </body>
 </html>
-<div style="font-family: Arial, sans-serif; max-width: 700px; margin: 30px 0 30px 0; padding: 20px; border: none; border-radius: 0; background-color: #f8f9fa; text-align: left;">
+<div style="font-family: Arial, sans-serif; max-width: 700px; margin: 30px 0; padding: 0; background: transparent; border: none; border-radius: 0; color: inherit;">
   <h2>Криптографические данные (RSA)</h2>
   
   <p><strong>Дата:</strong> <span id="current-date"></span></p>
   
   <p><strong>Открытый ключ (e, n):</strong></p>
-  <pre style="background: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; margin: 10px 0;">
+  <pre style="background: transparent; padding: 10px 0; border: none; border-radius: 0; overflow-x: auto; margin: 10px 0; color: inherit; font-family: monospace;">
 e = 65537
 n = 1234567890123456789012345678901234567890
   </pre>
 
   <p><strong>Закрытый ключ (d, n):</strong></p>
-  <pre style="background: #ffebee; padding: 10px; border-radius: 4px; overflow-x: auto; color: #c62828; margin: 10px 0;">
+  <pre style="background: transparent; padding: 10px 0; border: none; border-radius: 0; overflow-x: auto; margin: 10px 0; color: inherit; font-family: monospace;">
 d = 987654321098765432109876543210987654321
 n = 1234567890123456789012345678901234567890
   </pre>
@@ -117,6 +117,9 @@ n = 1234567890123456789012345678901234567890
   <p><strong>Реальное n:</strong> 1234567890123456789012345678901234567890</p>
 
   <script>
+    document.getElementById('current-date').textContent = new Date().toLocaleString('ru-RU');
+  </script>
+</div>
     document.getElementById('current-date').textContent = new Date().toLocaleString('ru-RU');
   </script>
 </div>
