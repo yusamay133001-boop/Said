@@ -29,11 +29,13 @@
 
     main {
       max-width: 700px;
-      margin: 0 auto;
+      margin: 0; 
+      padding-left: 0;
     }
 
     h1, h2, h3 {
       color: #a00;
+      margin-left: 0;
     }
 
     blockquote {
@@ -53,7 +55,6 @@
   </style>
 </head>
 <body>
-  <!-- Снег -->
   <script>
     for (let i = 0; i < 80; i++) {
       const s = document.createElement('div');
@@ -65,8 +66,6 @@
       document.body.appendChild(s);
     }
   </script>
-
-  <!-- Контент -->
   <main>
     <h1>Добро пожаловать</h1>
 
