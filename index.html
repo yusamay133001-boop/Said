@@ -73,3 +73,65 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Модели МО</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <p>01.04.2026</p>
+        <p>
+            Без признака:  MSE=25.3, RMSE=5.03, MAE=4.1, R²=0.67<br>
+            С признаком:   MSE=18.1, RMSE=4.25, MAE=3.4, R²=0.79
+        </p>
+    </div>
+ 
+    <table>
+        <thead>
+            <tr>
+                <th>Модель</th>
+                <th>Логика</th>
+                <th>Формула/Принцип</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Линейная регрессия</td>
+                <td>Прямая линия: y = w·x + b</td>
+                <td>Один взвешенный вход + сдвиг</td>
+            </tr>
+            <tr>
+                <td>Дерево решений</td>
+                <td>Последовательность «если-то»</td>
+                <td>Разбиение данных по порогам</td>
+            </tr>
+            <tr>
+                <td>Нейросеть</td>
+                <td>Много слоёв «линейных регрессий» + нелинейность</td>
+                <td>y = f(W·f(W·x + b) + b)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+ 
